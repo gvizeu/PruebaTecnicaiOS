@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVB-8i-PQ1">
-                                <rect key="frame" x="161" y="433" width="92" height="30"/>
+                                <rect key="frame" x="159" y="433" width="96" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Gusta Mucho"/>
+                                <state key="normal" title="Map view test"/>
                                 <connections>
                                     <segue destination="1vF-vp-3Y4" kind="show" id="yvg-ni-wqN"/>
                                 </connections>
