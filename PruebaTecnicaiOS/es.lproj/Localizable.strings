@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  PruebaTecnicaiOS
+
+  Created by Gonzalo Javier Vizeu on 30/06/2019.
+  Copyright © 2019. All rights reserved.
+*/
+
+"account_name" = "Nombre de cuenta";
+"iban" = "Iban";
+"balance" = "Saldo";
+"no_account_name" = "Nombre de cuenta no disponible";
+"no_iban" = "Iban no disponible";
+"no_balance" = "Saldo no disponible";
+"unexpected_error" = "ha ocurrido un error inesperado";
+"all_accounts" = "Todas las cuentas";
+"visible_accounts" = "Cuentas visibles";

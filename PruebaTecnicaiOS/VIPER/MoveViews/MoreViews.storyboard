@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="veP-60-de6">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Move Views View Controller-->
+        <scene sceneID="o0q-6m-8fX">
+            <objects>
+                <viewController storyboardIdentifier="MoveViewsViewController" id="veP-60-de6" customClass="MoveViewsViewController" customModule="PruebaTecnicaToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x9a-zm-SVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVB-8i-PQ1">
+                                <rect key="frame" x="161" y="433" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Gusta Mucho"/>
+                                <connections>
+                                    <segue destination="1vF-vp-3Y4" kind="show" id="yvg-ni-wqN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z42-Y8-zPF">
+                                <rect key="frame" x="190" y="659" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="1cX-8P-V16" kind="show" id="70V-tv-5Ln"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uta-2f-XuR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qFK-sd-LCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1428.985507246377" y="226.33928571428569"/>
+        </scene>
+        <!--View Maps View Controller-->
+        <scene sceneID="1ki-LQ-bTY">
+            <objects>
+                <viewController id="1vF-vp-3Y4" customClass="ViewMapsViewController" customModule="PruebaTecnicaToday" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rqP-Tm-4QZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aIb-yU-tFd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aIb-yU-tFd" firstAttribute="top" secondItem="gzT-py-u32" secondAttribute="top" id="1d2-rW-5so"/>
+                            <constraint firstItem="gzT-py-u32" firstAttribute="trailing" secondItem="aIb-yU-tFd" secondAttribute="trailing" id="9Bf-lZ-DLr"/>
+                            <constraint firstItem="aIb-yU-tFd" firstAttribute="leading" secondItem="gzT-py-u32" secondAttribute="leading" id="ZU4-ro-PrK"/>
+                            <constraint firstItem="gzT-py-u32" firstAttribute="bottom" secondItem="aIb-yU-tFd" secondAttribute="bottom" id="tmQ-k1-pzn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gzT-py-u32"/>
+                    </view>
+                    <connections>
+                        <outlet property="myMaps" destination="aIb-yU-tFd" id="fe0-FJ-J1r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meN-Nj-Ecc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-591" y="-111"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sHc-Q9-BF8">
+            <objects>
+                <viewController id="1cX-8P-V16" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KhP-mV-FXH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mtkView contentMode="scaleToFill" colorPixelFormat="BGRA8Unorm" depthStencilPixelFormat="Invalid" translatesAutoresizingMaskIntoConstraints="NO" id="4Wb-aH-Ggo" customClass="MetalView" customModule="PruebaTecnicaToday" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="clearColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                            </mtkView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bbV-bk-bt2" firstAttribute="trailing" secondItem="4Wb-aH-Ggo" secondAttribute="trailing" id="12s-U9-B6t"/>
+                            <constraint firstItem="4Wb-aH-Ggo" firstAttribute="top" secondItem="bbV-bk-bt2" secondAttribute="top" id="5JF-uo-ezK"/>
+                            <constraint firstItem="4Wb-aH-Ggo" firstAttribute="leading" secondItem="bbV-bk-bt2" secondAttribute="leading" id="JhC-iZ-wux"/>
+                            <constraint firstItem="bbV-bk-bt2" firstAttribute="bottom" secondItem="4Wb-aH-Ggo" secondAttribute="bottom" id="dGb-Xg-ImJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bbV-bk-bt2"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pJ2-ue-A0p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUw-SZ-0qW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-591" y="575"/>
+        </scene>
+    </scenes>
+</document>

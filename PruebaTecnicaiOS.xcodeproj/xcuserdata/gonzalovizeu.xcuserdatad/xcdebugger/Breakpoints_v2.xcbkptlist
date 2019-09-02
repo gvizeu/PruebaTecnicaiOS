@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaTecnicaiOS/VIPER/TabBar/TabBarWireframe.swift"
+            timestampString = "586952122.6063091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "installIntoView(todayViewController:vc:wireFrames:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static PruebaTecnicaiOS.TabBarWireframe.installIntoView(todayViewController: PruebaTecnicaiOS.TodayViewController, vc: __C.UIViewController, wireFrames: Swift.Array&lt;PruebaTecnicaiOS.TabBarViewProtocol&gt;) -&gt; PruebaTecnicaiOS.TabBarWireframeProtocol"
+                  moduleName = "PruebaTecnicaiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gonzalovizeu/Downloads/PruebaTecnicaiOS/PruebaTecnicaiOS/VIPER/TabBar/TabBarWireframe.swift"
+                  timestampString = "588602281.363409"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "3218">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static PruebaTecnicaiOSTests.TabBarWireframe.installIntoView(todayViewController: PruebaTecnicaiOSTests.TodayViewController, vc: __C.UIViewController, wireFrames: Swift.Array&lt;PruebaTecnicaiOSTests.TabBarViewProtocol&gt;) -&gt; PruebaTecnicaiOSTests.TabBarWireframeProtocol"
+                  moduleName = "PruebaTecnicaiOSTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gonzalovizeu/Downloads/PruebaTecnicaiOS/PruebaTecnicaiOS/VIPER/TabBar/TabBarWireframe.swift"
+                  timestampString = "588602281.8493921"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "105"
+                  endingLineNumber = "105"
+                  offsetFromSymbolStart = "3218">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaTecnicaiOS/VIPER/TabBar/TabBarWireframe.swift"
+            timestampString = "586952122.606581"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "installIntoView(todayViewController:vc:wireFrames:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static PruebaTecnicaiOS.TabBarWireframe.installIntoView(todayViewController: PruebaTecnicaiOS.TodayViewController, vc: __C.UIViewController, wireFrames: Swift.Array&lt;PruebaTecnicaiOS.TabBarViewProtocol&gt;) -&gt; PruebaTecnicaiOS.TabBarWireframeProtocol"
+                  moduleName = "PruebaTecnicaiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gonzalovizeu/Downloads/PruebaTecnicaiOS/PruebaTecnicaiOS/VIPER/TabBar/TabBarWireframe.swift"
+                  timestampString = "588602281.4112459"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "2571">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static PruebaTecnicaiOSTests.TabBarWireframe.installIntoView(todayViewController: PruebaTecnicaiOSTests.TodayViewController, vc: __C.UIViewController, wireFrames: Swift.Array&lt;PruebaTecnicaiOSTests.TabBarViewProtocol&gt;) -&gt; PruebaTecnicaiOSTests.TabBarWireframeProtocol"
+                  moduleName = "PruebaTecnicaiOSTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gonzalovizeu/Downloads/PruebaTecnicaiOS/PruebaTecnicaiOS/VIPER/TabBar/TabBarWireframe.swift"
+                  timestampString = "588602281.8521399"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "2571">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PruebaTecnicaiOS/VIPER/MoveViews/Renderer.swift"
+            timestampString = "588601329.224763"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "draw(in:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaTecnicaiOS.Renderer.draw(in: __C.MTKView) -&gt; ()"
+                  moduleName = "PruebaTecnicaiOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gonzalovizeu/Downloads/PruebaTecnicaiOS/PruebaTecnicaiOS/VIPER/MoveViews/Renderer.swift"
+                  timestampString = "588602281.4213409"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "652">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PruebaTecnicaiOSTests.Renderer.draw(in: __C.MTKView) -&gt; ()"
+                  moduleName = "PruebaTecnicaiOSTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gonzalovizeu/Downloads/PruebaTecnicaiOS/PruebaTecnicaiOS/VIPER/MoveViews/Renderer.swift"
+                  timestampString = "588602281.854864"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "652">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
