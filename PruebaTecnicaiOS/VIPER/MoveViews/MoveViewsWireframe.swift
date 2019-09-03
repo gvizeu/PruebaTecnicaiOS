@@ -8,30 +8,27 @@
 
 import UIKit
 
-protocol MoveViewsWireframeProtocol: class
-{
-    
+protocol MoveViewsWireframeProtocol: class {
+
 }
 class MoveViewsWireframe: MoveViewsWireframeProtocol {
-    
-    static func instantiate() -> MoveViewsViewController
-    {
+    // swiftlint:disable force_cast line_length
+    static func instantiate() -> MoveViewsViewController {
         return UIStoryboard(name: "MoreViews", bundle: nil).instantiateViewController(withIdentifier: "MoveViewsViewController") as! MoveViewsViewController
     }
-    
+    // swiftlint:enable force_cast
      func configuredViewController() -> UIViewController {
         let presenter: MoveViewsPresenterProtocol & MoveViewsInteractorOutputProtocol = MoveViewsPresenter()
         let interactor: MoveViewsInteractorInputProtocol = MoveViewsInteractor()
         let view = MoveViewsWireframe.instantiate()
-        
+
         // Connecting
         view.presenter = presenter
         presenter.view = view
         presenter.wireFrame = self
         presenter.interactor = interactor
         interactor.presenter = presenter
-        
+
         return view as UIViewController
     }
 }
-

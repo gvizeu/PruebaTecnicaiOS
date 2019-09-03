@@ -8,15 +8,13 @@
 
 import UIKit
 
-protocol VisibleAccountsInteractorOutputProtocol: class
-{
+protocol VisibleAccountsInteractorOutputProtocol: class {
     func dataRecived(model: DataAccounts)
 }
 
-protocol VisibleAccountsInteractorInputProtocol: class
-{
+protocol VisibleAccountsInteractorInputProtocol: class {
     var presenter: VisibleAccountsInteractorOutputProtocol? { get set }
-    
+
     func getVisibleAccountsDataAction(profile: String, success: @escaping(String?) -> Void, failure: @escaping(NSError) -> Void)
 
 }
@@ -31,13 +29,12 @@ class VisibleAccountsInteractor: VisibleAccountsInteractorInputProtocol {
             //return data to presenter
             self.presenter?.dataRecived(model: model)
             success("Data recived ✅")
-            
+
         }, failure: {_ in
             print(Error.self)
         })
     }
-    
-    var presenter: VisibleAccountsInteractorOutputProtocol?
 
+    var presenter: VisibleAccountsInteractorOutputProtocol?
 
 }

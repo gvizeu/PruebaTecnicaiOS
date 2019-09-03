@@ -9,32 +9,32 @@
 import Foundation
 import UIKit
 
-class TabBarRootWireframe: NSObject
-{
+class TabBarRootWireframe: NSObject {
     var window: UIWindow!
     var tabBarWireframe: TabBarWireframeProtocol?
-    
-    init(window: UIWindow)
-    {
+
+    init(window: UIWindow) {
         super.init()
         self.window = window
-        
+
         // custom initialization
     }
-    
-    func installViewIntoRootViewController(){
-        
+
+    func installViewIntoRootViewController() {
+
         var wireframes = [TabBarViewProtocol]()
-        
+
         //Add views to TabBar
-        
-        let allAccountsWireframe : AllAccountsWireframeProtocol = AllAccountsWireframe()
-        wireframes.append(allAccountsWireframe as! TabBarViewProtocol)
-        
+
+        let allAccountsWireframe: AllAccountsWireframeProtocol = AllAccountsWireframe()
+        if let allAccountsWireframe = allAccountsWireframe as? TabBarViewProtocol {
+            wireframes.append(allAccountsWireframe)
+        }
         let visibleAccountsWireframe: VisibleAccountsWireframeProtocol = VisibleAccountsWireframe()
-        wireframes.append(visibleAccountsWireframe as! TabBarViewProtocol)
-        
-        
-        self.tabBarWireframe = TabBarWireframe.installIntoWindow(rootWireFrame: self, window: self.window, wireFrames: wireframes)
+        if let visibleAccountsWireframe = visibleAccountsWireframe as? TabBarViewProtocol {
+            wireframes.append(visibleAccountsWireframe)
+        }
+
+        tabBarWireframe = TabBarWireframe.installIntoWindow(rootWireFrame: self, window: window, wireFrames: wireframes)
     }
 }

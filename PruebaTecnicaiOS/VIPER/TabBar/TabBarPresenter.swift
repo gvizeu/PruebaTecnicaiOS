@@ -16,10 +16,9 @@ protocol TabBarPresenterProtocol: class {
 
 class TabBarPresenter: TabBarPresenterProtocol, TabBarInteractorOutputProtocol {
     var view: TabBarControllerProtocol?
-    
+
     var interactor: TabBarInteractorInputProtocol?
-    
+
     var wireFrame: TabBarWireframeProtocol?
-    
 
 }

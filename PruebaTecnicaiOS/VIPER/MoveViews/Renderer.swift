@@ -18,22 +18,22 @@ class Renderer: NSObject {
     var renderPipelineState: MTLRenderPipelineState!
     var vertexBuffer: MTLBuffer!
     var vertices: [Vertex] = [
-        Vertex(position: float3(0,1,0), color: float4(1,0,0,1)),
-        Vertex(position: float3(-1,0,0), color: float4(0,1,0,1)),
-        Vertex(position: float3(1,0,0), color: float4(0,0,1,1))
+        Vertex(position: float3(0, 1, 0), color: float4(1, 0, 0, 1)),
+        Vertex(position: float3(-1, 0, 0), color: float4(0, 1, 0, 1)),
+        Vertex(position: float3(1, 0, 0), color: float4(0, 0, 1, 1))
     ]
-    
+
     init(device: MTLDevice) {
         super.init()
         createCommandQueue(device: device)
         createPipelineState(device: device)
         createBuffers(device: device)
     }
-    
+
     func createCommandQueue(device: MTLDevice) {
         commandQueue = device.makeCommandQueue()
     }
-    
+
     func createPipelineState(device: MTLDevice) {
         // The device will make a library for us
         let library = device.makeDefaultLibrary()
@@ -55,7 +55,7 @@ class Renderer: NSObject {
             print(error.localizedDescription)
         }
     }
-    
+
     func createBuffers(device: MTLDevice) {
         vertexBuffer = device.makeBuffer(bytes: vertices,
                                          length: MemoryLayout<Vertex>.stride * vertices.count,
@@ -65,7 +65,7 @@ class Renderer: NSObject {
 
 extension Renderer: MTKViewDelegate {
     func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {}
-    
+
     func draw(in view: MTKView) {
         // Get the current drawable and descriptor
         guard let drawable = view.currentDrawable,

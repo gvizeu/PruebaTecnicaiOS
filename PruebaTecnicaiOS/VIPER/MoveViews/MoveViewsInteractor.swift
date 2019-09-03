@@ -8,20 +8,16 @@
 
 import UIKit
 
-protocol MoveViewsInteractorOutputProtocol: class
-{
+protocol MoveViewsInteractorOutputProtocol: class {
 
 }
 
-protocol MoveViewsInteractorInputProtocol: class
-{
+protocol MoveViewsInteractorInputProtocol: class {
     var presenter: MoveViewsInteractorOutputProtocol? { get set }
 }
 
-class MoveViewsInteractor: NSObject ,  MoveViewsInteractorInputProtocol{
-    
+class MoveViewsInteractor: NSObject, MoveViewsInteractorInputProtocol {
+
     var presenter: MoveViewsInteractorOutputProtocol?
-    
-    
 
 }
