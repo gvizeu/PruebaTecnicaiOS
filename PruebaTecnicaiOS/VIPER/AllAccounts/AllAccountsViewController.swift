@@ -7,8 +7,7 @@
 //
 
 import UIKit
-protocol AllAccountsViewControllerProtocol: class
-{
+protocol AllAccountsViewControllerProtocol: class {
     var presenter: AllAccountsPresenterProtocol? { get set }
     var tableViewDelegate: UITableView? { get set }
     /**
@@ -18,9 +17,7 @@ protocol AllAccountsViewControllerProtocol: class
 
 class AllAccountsViewController: UIViewController, AllAccountsViewControllerProtocol, UITableViewDelegate, UITableViewDataSource {
     var tableViewDelegate: UITableView?
-    
 
-    
     @IBOutlet weak var mySegmented: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
     var presenter: AllAccountsPresenterProtocol?
@@ -31,30 +28,27 @@ class AllAccountsViewController: UIViewController, AllAccountsViewControllerProt
         self.changed = true
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
+
         self.tableViewDelegate = self.tableView
-        
-        
-        
+
     }
-    
+
     @IBAction func goToOtherView(_ sender: Any) {
         self.presenter?.goToMoveViews()
     }
-    
-    
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
+
         if self.changed! {
             return self.presenter?.accounts?.count ?? 0
         } else {
-            let filterAccounts = self.presenter?.accounts!.filter{ $0.isVisible == true }
-            
+            let filterAccounts = self.presenter?.accounts!.filter { $0.isVisible == true }
+
             return filterAccounts?.count ?? 0
         }
-        
+
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier = "TableViewCellAllAccounts"
         var cell: TableViewCellAllAccounts! = tableView.dequeueReusableCell(withIdentifier: identifier) as? TableViewCellAllAccounts
@@ -66,32 +60,30 @@ class AllAccountsViewController: UIViewController, AllAccountsViewControllerProt
             let account = self.presenter?.accounts?[indexPath.row]
             cell.configureCell(accountName: account?.accountName, iban: account?.iban, balance: account!.accountBalanceInCents!)
         } else {
-            let filterAccounts = self.presenter?.accounts!.filter{ $0.isVisible == true }
-            
+            let filterAccounts = self.presenter?.accounts!.filter { $0.isVisible == true }
+
             let account = filterAccounts?[indexPath.row]
             cell.configureCell(accountName: account?.accountName, iban: account?.iban, balance: account!.accountBalanceInCents!)
         }
-        
-        
+
         return cell
-        
-        
+
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
-    
+
     @IBAction func filterTable(_ sender: Any) {
         if self.changed! {
             self.changed = false
         } else {
             self.changed = true
         }
-        
+
         self.tableView.reloadData()
-        
+
 //         self.presenter.accounts = self.presenter.accounts.filter{ $0.isVisible == true }
     }
-    
+
 }

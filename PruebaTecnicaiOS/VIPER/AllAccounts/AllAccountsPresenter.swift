@@ -8,40 +8,39 @@
 
 import UIKit
 
-protocol AllAccountsPresenterProtocol: class
-{
+protocol AllAccountsPresenterProtocol: class {
     var view: AllAccountsViewControllerProtocol? { get set }
     var interactor: AllAccountsInteractorInputProtocol? { get set }
     var wireFrame: AllAccountsWireframeProtocol? { get set }
-    
+
     var accounts: [Account]? { get set }
-    
+
     func getData()
-    
+
     func goToMoveViews()
 }
 
 class AllAccountsPresenter: NSObject, AllAccountsPresenterProtocol, AllAccountsInteractorOutputProtocol {
-    
+
     var view: AllAccountsViewControllerProtocol?
     var interactor: AllAccountsInteractorInputProtocol?
     var wireFrame: AllAccountsWireframeProtocol?
-    
+
     var accounts: [Account]?
-    
+
     func getData() {
         self.getDataAction()
     }
-    
+
     func dataRecived(model: DataAccounts) {
         self.dataRecivedAction(model: model)
     }
-    
-    func goToMoveViews(){
+
+    func goToMoveViews() {
         self.goToMoveViewsAction()
     }
-    
-    internal func getDataAction(){
+
+    internal func getDataAction() {
         //request data
         self.interactor?.getAllAccountsDataAction(profile: "accounts", success: { model in
             print(model!)
@@ -49,15 +48,14 @@ class AllAccountsPresenter: NSObject, AllAccountsPresenterProtocol, AllAccountsI
             print(Error.self)
         })
     }
-    
-    internal func dataRecivedAction(model: DataAccounts){
-        
+
+    internal func dataRecivedAction(model: DataAccounts) {
+
         self.accounts = model.accounts
     }
-    
-    private func goToMoveViewsAction(){
+
+    private func goToMoveViewsAction() {
         self.wireFrame?.goToMoveViews()
     }
-    
 
 }

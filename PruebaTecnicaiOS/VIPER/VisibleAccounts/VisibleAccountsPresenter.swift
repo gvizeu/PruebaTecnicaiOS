@@ -8,9 +8,7 @@
 
 import UIKit
 
-
-protocol VisibleAccountsPresenterProtocol: class
-{
+protocol VisibleAccountsPresenterProtocol: class {
     var view: VisibleAccountsControllerProtocol? { get set }
     var interactor: VisibleAccountsInteractorInputProtocol? { get set }
     var wireFrame: VisibleAccountsWireframeProtocol? { get set }
@@ -23,18 +21,18 @@ class VisibleAccountsPresenter: VisibleAccountsPresenterProtocol, VisibleAccount
     var view: VisibleAccountsControllerProtocol?
     var interactor: VisibleAccountsInteractorInputProtocol?
     var wireFrame: VisibleAccountsWireframeProtocol?
-    
+
     var accounts: [Account]?
-    
+
     func getData() {
         self.getDataAction()
     }
-    
+
     func dataRecived(model: DataAccounts) {
         self.dataRecivedAction(model: model)
     }
 
-    internal func getDataAction(){
+    internal func getDataAction() {
         //request data
         self.interactor?.getVisibleAccountsDataAction(profile: "accounts", success: { model in
             print(model!)
@@ -42,9 +40,9 @@ class VisibleAccountsPresenter: VisibleAccountsPresenterProtocol, VisibleAccount
             print(Error.self)
         })
     }
-    
-    internal func dataRecivedAction(model: DataAccounts){
+
+    internal func dataRecivedAction(model: DataAccounts) {
         //filter data recived
-        self.accounts = model.accounts.filter{ $0.isVisible == true }
+        self.accounts = model.accounts.filter { $0.isVisible == true }
     }
 }

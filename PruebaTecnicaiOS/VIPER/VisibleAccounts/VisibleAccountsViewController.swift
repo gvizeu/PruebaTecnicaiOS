@@ -7,18 +7,16 @@
 //
 
 import UIKit
-protocol VisibleAccountsControllerProtocol: class
-{
+protocol VisibleAccountsControllerProtocol: class {
     var presenter: VisibleAccountsPresenterProtocol? { get set }
     /**
      * Add here your methods for communication PRESENTER -> VIEW
      */
 }
 
-class VisibleAccountsViewController: UIViewController, VisibleAccountsControllerProtocol, UITableViewDelegate, UITableViewDataSource {
+class VisibleAccountsViewController: UIViewController, VisibleAccountsControllerProtocol {
 
     var presenter: VisibleAccountsPresenterProtocol?
-    
 
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -29,24 +27,28 @@ class VisibleAccountsViewController: UIViewController, VisibleAccountsController
 
         // Do any additional setup after loading the view.
     }
+}
 
+extension VisibleAccountsViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.presenter?.accounts?.count ?? 0
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let identifier = "VisibleAccountsTableViewCell"
+
+        let identifier = CellId.visibleAccountsTableViewCell
         var cell: VisibleAccountsTableViewCell! = tableView.dequeueReusableCell(withIdentifier: identifier) as? VisibleAccountsTableViewCell
         if cell == nil {
-            tableView.register(UINib(nibName: "VisibleAccountsTableViewCell", bundle: nil), forCellReuseIdentifier: identifier)
+            tableView.register(UINib(nibName: "VisibleAccountsTableViewCell", bundle: nil),
+                               forCellReuseIdentifier: identifier)
             cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? VisibleAccountsTableViewCell
         }
         let account = self.presenter?.accounts?[indexPath.row]
-        cell.configureCell(accountName: account?.accountName, iban: account?.iban, balance: account!.accountBalanceInCents!)
-        
+        cell.configureCell(accountName: account?.accountName,
+                           iban: account?.iban,
+                           balance: account!.accountBalanceInCents!)
         return cell
     }
-    
 
 }

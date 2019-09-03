@@ -12,44 +12,41 @@ import NotificationCenter
 class TodayViewController: UIViewController, NCWidgetProviding {
     var window: UIWindow?
     var rootWireframe: TabBarRootWireframe?
-    
-    
+
     var tabBarWireframe: TabBarWireframeProtocol?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.rootWireframe = TabBarRootWireframe.init(window: self.window!)
-        
-        
+
         var wireframes = [TabBarViewProtocol]()
-        
-        let allAccountsWireframe : AllAccountsWireframeProtocol = AllAccountsWireframe()
-        wireframes.append(allAccountsWireframe as! TabBarViewProtocol)
-        
+
+        let allAccountsWireframe: AllAccountsWireframeProtocol = AllAccountsWireframe()
+        if let allAccountsWireframe = allAccountsWireframe as? TabBarViewProtocol {
+            wireframes.append(allAccountsWireframe)
+        }
         let visibleAccountsWireframe: VisibleAccountsWireframeProtocol = VisibleAccountsWireframe()
-        wireframes.append(visibleAccountsWireframe as! TabBarViewProtocol)
-        
-        self.tabBarWireframe = TabBarWireframe.installIntoView(todayViewController: self, vc: self, wireFrames: wireframes)
-        
+        if let visibleAccountsWireframe = visibleAccountsWireframe as? TabBarViewProtocol {
+            wireframes.append(visibleAccountsWireframe)
+        }
+        self.tabBarWireframe = TabBarWireframe.installIntoView(VC: self, vc: self, wireFrames: wireframes)
+
         //self.view.addSubview((self.tabBarWireframe as! TabBarWireframe).rootWireframe)
-        
-        
+
 //        self.vc = (self.allAccountsWireframe as! AllAccountsWireframe).configuredViewController()
 //        self.view.addSubview(self.rootWireframe)
         // Do any additional setup after loading the view.
     }
-    
+
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
         // Perform any setup necessary in order to update the view.
-        
+
         // If an error is encountered, use NCUpdateResult.Failed
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
-        
+
         extensionContext?.widgetLargestAvailableDisplayMode = .expanded
-       
-        
-        
+
         completionHandler(NCUpdateResult.newData)
     }
     func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
@@ -59,8 +56,8 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 //        for cell in VC.tableViewDelegate!.visibleCells {
 //            totalheight += cell.bounds.height
 //        }
-        preferredContentSize = expanded ? CGSize(width: maxSize.width, height:  maxSize.height) : maxSize
-        
+        preferredContentSize = expanded ? CGSize(width: maxSize.width, height: maxSize.height) : maxSize
+
     }
-    
+
 }

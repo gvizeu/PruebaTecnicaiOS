@@ -8,22 +8,19 @@
 
 import UIKit
 
-protocol AllAccountsInteractorOutputProtocol: class
-{
+protocol AllAccountsInteractorOutputProtocol: class {
     func dataRecived(model: DataAccounts)
 }
 
-protocol AllAccountsInteractorInputProtocol: class
-{
+protocol AllAccountsInteractorInputProtocol: class {
     var presenter: AllAccountsInteractorOutputProtocol? { get set }
     func getAllAccountsDataAction(profile: String, success: @escaping(String?) -> Void, failure: @escaping(NSError) -> Void)
 }
 
-class AllAccountsInteractor: NSObject ,  AllAccountsInteractorInputProtocol{
-    
+class AllAccountsInteractor: NSObject, AllAccountsInteractorInputProtocol {
+
     var presenter: AllAccountsInteractorOutputProtocol?
-    
-    
+
     internal func getAllAccountsDataAction(profile: String, success: @escaping(String?) -> Void, failure: @escaping(NSError) -> Void) {
          //request data to provider
         let provider = DataProvider()
@@ -33,11 +30,11 @@ class AllAccountsInteractor: NSObject ,  AllAccountsInteractorInputProtocol{
             //return data to presenter
             self.presenter?.dataRecived(model: model)
             success("Data recived ✅")
-            
+
         }, failure: {_ in
             print(Error.self)
         })
-        
+
     }
 
 }

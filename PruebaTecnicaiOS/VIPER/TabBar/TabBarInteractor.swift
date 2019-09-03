@@ -8,15 +8,13 @@
 
 import UIKit
 
-protocol TabBarInteractorOutputProtocol: class
-{
+protocol TabBarInteractorOutputProtocol: class {
     /**
      * Add here your methods for communication INTERACTOR -> PRESENTER
      */
 }
 
-protocol TabBarInteractorInputProtocol: class
-{
+protocol TabBarInteractorInputProtocol: class {
     var presenter: TabBarInteractorOutputProtocol? { get set }
     /**
      * Add here your methods for communication PRESENTER -> INTERACTOR
@@ -25,6 +23,5 @@ protocol TabBarInteractorInputProtocol: class
 
 class TabBarInteractor: TabBarInteractorInputProtocol {
     var presenter: TabBarInteractorOutputProtocol?
-    
 
 }
