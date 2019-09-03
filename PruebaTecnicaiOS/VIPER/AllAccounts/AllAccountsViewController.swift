@@ -50,7 +50,7 @@ class AllAccountsViewController: UIViewController, AllAccountsViewControllerProt
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let identifier = "TableViewCellAllAccounts"
+        let identifier = TableViewCellAllAccounts.reuseIdentified()
         var cell: TableViewCellAllAccounts! = tableView.dequeueReusableCell(withIdentifier: identifier) as? TableViewCellAllAccounts
         if cell == nil {
             tableView.register(UINib(nibName: "TableViewCellAllAccounts", bundle: nil), forCellReuseIdentifier: identifier)

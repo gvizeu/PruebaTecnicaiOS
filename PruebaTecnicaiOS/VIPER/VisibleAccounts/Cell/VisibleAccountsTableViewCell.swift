@@ -30,20 +30,20 @@ class VisibleAccountsTableViewCell: UITableViewCell {
 
     func setUpCellTitles() {
 
-        self.accountNameTitle.text = NSLocalizedString("account_name", comment: "account_name")
-        self.ibanTitle.text = NSLocalizedString("iban", comment: "iban")
-        self.balanceTitle.text = NSLocalizedString("balance", comment: "balance")
+        self.accountNameTitle.text = "account_name".localize
+        self.ibanTitle.text = "iban".localize
+        self.balanceTitle.text = "balance".localize
     }
 
     func configureCell(accountName: String?, iban: String?, balance: Int?) {
         if accountName == "" || accountName == nil {
-            self.accountNameLabel.text =  NSLocalizedString("no_account_name", comment: "no_account_name")
+            self.accountNameLabel.text =  "no_account_name".localize
         } else {
             self.accountNameLabel.text = accountName
         }
 
         if iban == "" || iban == nil {
-            self.ibanLabel.text =  NSLocalizedString("no_iban", comment: "no_iban")
+            self.ibanLabel.text =  "no_iban".localize
         } else {
             self.ibanLabel.text = iban
 
@@ -54,6 +54,9 @@ class VisibleAccountsTableViewCell: UITableViewCell {
         numberFormatter.numberStyle = .decimal
         let formattedNumber = numberFormatter.string(from: NSNumber(value: euroNumber / 100))
         self.balanceLabel.text = "\(formattedNumber!) €"
+    }
+    static func reuseIdentified() -> String {
+        return ViewCells.visibleAccountsTableViewCell.rawValue
     }
 
 }

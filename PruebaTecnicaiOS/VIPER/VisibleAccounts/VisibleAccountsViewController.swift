@@ -37,7 +37,7 @@ extension VisibleAccountsViewController: UITableViewDelegate, UITableViewDataSou
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let identifier = CellId.visibleAccountsTableViewCell
+        let identifier = VisibleAccountsTableViewCell.reuseIdentified()
         var cell: VisibleAccountsTableViewCell! = tableView.dequeueReusableCell(withIdentifier: identifier) as? VisibleAccountsTableViewCell
         if cell == nil {
             tableView.register(UINib(nibName: "VisibleAccountsTableViewCell", bundle: nil),

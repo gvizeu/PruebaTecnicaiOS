@@ -20,7 +20,7 @@ class AllAccountsWireframe: TabBarViewProtocol, AllAccountsWireframeProtocol {
     var view: AllAccountsViewController?
 
     var tabIcon: UIImage = UIImage(named: "Module1Image")!
-    var tabTitle: String = NSLocalizedString("all_accounts", comment: "all_accounts")
+    var tabTitle: String = "all_accounts".localize
 
     static func presentAllAccountsModule(fromView view: AnyObject) {
 

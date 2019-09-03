@@ -9,9 +9,11 @@
 /* Begin PBXBuildFile section */
 		5996E573D51FED03C2A18AA9 /* Pods_PruebaTecnicaiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E855290DCE00301F646AA14 /* Pods_PruebaTecnicaiOS.framework */; };
 		5CE8343C065FA6D744B3567F /* Pods_PruebaTecnicaToday.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D241A933D6A1085BAAB2DD17 /* Pods_PruebaTecnicaToday.framework */; };
-		7355C754231D5B7400E0CE08 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7355C753231D5B7400E0CE08 /* Constants.swift */; };
-		7355C755231D5C5900E0CE08 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7355C753231D5B7400E0CE08 /* Constants.swift */; };
-		7355C756231D5C5900E0CE08 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7355C753231D5B7400E0CE08 /* Constants.swift */; };
+		733F8AA4231E5E860071A4C7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733F8AA3231E5E860071A4C7 /* Constants.swift */; };
+		733F8AA6231E61500071A4C7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733F8AA3231E5E860071A4C7 /* Constants.swift */; };
+		733F8AA8231E729C0071A4C7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733F8AA3231E5E860071A4C7 /* Constants.swift */; };
+		733F8AAA231E74E00071A4C7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733F8AA9231E74E00071A4C7 /* StringExtension.swift */; };
+		733F8AAB231E74E00071A4C7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733F8AA9231E74E00071A4C7 /* StringExtension.swift */; };
 		73771C7C22F96B770045CBA6 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73771C7B22F96B770045CBA6 /* NotificationCenter.framework */; };
 		73771C7F22F96B770045CBA6 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771C7E22F96B770045CBA6 /* TodayViewController.swift */; };
 		73771C8222F96B770045CBA6 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73771C8022F96B770045CBA6 /* MainInterface.storyboard */; };
@@ -47,10 +49,6 @@
 		73771D0222FAB9090045CBA6 /* MoveViewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771CF922FAB9090045CBA6 /* MoveViewsInteractor.swift */; };
 		73771D0322FAB9090045CBA6 /* MoveViewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771CFA22FAB9090045CBA6 /* MoveViewsPresenter.swift */; };
 		73771D0422FAB9090045CBA6 /* MoveViewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771CFA22FAB9090045CBA6 /* MoveViewsPresenter.swift */; };
-		73771D0522FAB9090045CBA6 /* TableViewCellMoveViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73771CFC22FAB9090045CBA6 /* TableViewCellMoveViews.xib */; };
-		73771D0622FAB9090045CBA6 /* TableViewCellMoveViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73771CFC22FAB9090045CBA6 /* TableViewCellMoveViews.xib */; };
-		73771D0722FAB9090045CBA6 /* TableViewCellMoveViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771CFD22FAB9090045CBA6 /* TableViewCellMoveViews.swift */; };
-		73771D0822FAB9090045CBA6 /* TableViewCellMoveViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771CFD22FAB9090045CBA6 /* TableViewCellMoveViews.swift */; };
 		73771D0B22FAB9090045CBA6 /* MoveViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771CFF22FAB9090045CBA6 /* MoveViewsViewController.swift */; };
 		73771D0C22FAB9090045CBA6 /* MoveViewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771CFF22FAB9090045CBA6 /* MoveViewsViewController.swift */; };
 		73771D0D22FAB9090045CBA6 /* MoveViewsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771D0022FAB9090045CBA6 /* MoveViewsWireframe.swift */; };
@@ -91,8 +89,6 @@
 		73771D7622FC2D2A0045CBA6 /* AllAccountsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848C2B22C2C48D00679DCA /* AllAccountsPresenter.swift */; };
 		73771D7722FC2D2A0045CBA6 /* AllAccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3848C2722C2C46100679DCA /* AllAccountsViewController.swift */; };
 		73771D7822FC2D2A0045CBA6 /* AllAccountsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3848C2822C2C46100679DCA /* AllAccountsViewController.xib */; };
-		73771D7922FC2D370045CBA6 /* TableViewCellMoveViews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73771CFC22FAB9090045CBA6 /* TableViewCellMoveViews.xib */; };
-		73771D7A22FC2D370045CBA6 /* TableViewCellMoveViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771CFD22FAB9090045CBA6 /* TableViewCellMoveViews.swift */; };
 		73771D7B22FC2D370045CBA6 /* MoveViewsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771D0022FAB9090045CBA6 /* MoveViewsWireframe.swift */; };
 		73771D7C22FC2D370045CBA6 /* MoveViewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771CF922FAB9090045CBA6 /* MoveViewsInteractor.swift */; };
 		73771D7D22FC2D370045CBA6 /* MoveViewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73771CFA22FAB9090045CBA6 /* MoveViewsPresenter.swift */; };
@@ -184,7 +180,8 @@
 		5773FA78F5547797D465A335 /* Pods-PruebaTecnicaiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaTecnicaiOS.debug.xcconfig"; path = "Target Support Files/Pods-PruebaTecnicaiOS/Pods-PruebaTecnicaiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		603E291C7148E058DFD8E08E /* Pods-PruebaTecnicaiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaTecnicaiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-PruebaTecnicaiOSTests/Pods-PruebaTecnicaiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		71C8508060761A9097EC44AA /* Pods-PruebaTecnicaiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PruebaTecnicaiOSTests.release.xcconfig"; path = "Target Support Files/Pods-PruebaTecnicaiOSTests/Pods-PruebaTecnicaiOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		7355C753231D5B7400E0CE08 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		733F8AA3231E5E860071A4C7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		733F8AA9231E74E00071A4C7 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		73771C7922F96B770045CBA6 /* PruebaTecnicaToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PruebaTecnicaToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		73771C7B22F96B770045CBA6 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		73771C7E22F96B770045CBA6 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -192,8 +189,6 @@
 		73771C8322F96B770045CBA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73771CF922FAB9090045CBA6 /* MoveViewsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveViewsInteractor.swift; sourceTree = "<group>"; };
 		73771CFA22FAB9090045CBA6 /* MoveViewsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveViewsPresenter.swift; sourceTree = "<group>"; };
-		73771CFC22FAB9090045CBA6 /* TableViewCellMoveViews.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCellMoveViews.xib; sourceTree = "<group>"; };
-		73771CFD22FAB9090045CBA6 /* TableViewCellMoveViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellMoveViews.swift; sourceTree = "<group>"; };
 		73771CFF22FAB9090045CBA6 /* MoveViewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveViewsViewController.swift; sourceTree = "<group>"; };
 		73771D0022FAB9090045CBA6 /* MoveViewsWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveViewsWireframe.swift; sourceTree = "<group>"; };
 		73771D0F22FACDFE0045CBA6 /* MoreViews.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoreViews.storyboard; sourceTree = "<group>"; };
@@ -300,10 +295,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		733F8A9F231E4ED50071A4C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				733F8AA9231E74E00071A4C7 /* StringExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7355C750231D56C500E0CE08 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				7355C753231D5B7400E0CE08 /* Constants.swift */,
+				733F8AA3231E5E860071A4C7 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -333,7 +336,6 @@
 		73771CF822FAB9090045CBA6 /* MoveViews */ = {
 			isa = PBXGroup;
 			children = (
-				73771CFB22FAB9090045CBA6 /* Cell */,
 				73771D0022FAB9090045CBA6 /* MoveViewsWireframe.swift */,
 				73771CF922FAB9090045CBA6 /* MoveViewsInteractor.swift */,
 				73771CFA22FAB9090045CBA6 /* MoveViewsPresenter.swift */,
@@ -345,15 +347,6 @@
 				73771D1E22FAEE4B0045CBA6 /* Shaders.metal */,
 			);
 			path = MoveViews;
-			sourceTree = "<group>";
-		};
-		73771CFB22FAB9090045CBA6 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				73771CFC22FAB9090045CBA6 /* TableViewCellMoveViews.xib */,
-				73771CFD22FAB9090045CBA6 /* TableViewCellMoveViews.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		73771D5422FC2A5B0045CBA6 /* PruebaTecnicaiOSTests */ = {
@@ -416,6 +409,7 @@
 		E3848C2022C2C31900679DCA /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				733F8A9F231E4ED50071A4C7 /* Extensions */,
 				7355C750231D56C500E0CE08 /* Utils */,
 				E3A9C81F22C7F1A400FECEB0 /* CommonEntities */,
 				E3A9C83C22C90C1D00FECEB0 /* Provider */,
@@ -604,7 +598,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1020;
-				ORGANIZATIONNAME = everis;
+				ORGANIZATIONNAME = "";
 				TargetAttributes = {
 					73771C7822F96B770045CBA6 = {
 						CreatedOnToolsVersion = 10.3;
@@ -659,7 +653,6 @@
 				73771CCE22F97F5B0045CBA6 /* VisibleAccountsTableViewCell.xib in Resources */,
 				73771CE022F981B40045CBA6 /* Assets.xcassets in Resources */,
 				73771CC822F97F5B0045CBA6 /* accounts.json in Resources */,
-				73771D0622FAB9090045CBA6 /* TableViewCellMoveViews.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,7 +663,6 @@
 				73771D6522FC2CE70045CBA6 /* TabBarControllerView.xib in Resources */,
 				73771D7322FC2D2A0045CBA6 /* TableViewCellAllAccounts.xib in Resources */,
 				73771D7822FC2D2A0045CBA6 /* AllAccountsViewController.xib in Resources */,
-				73771D7922FC2D370045CBA6 /* TableViewCellMoveViews.xib in Resources */,
 				73771D8022FC2D370045CBA6 /* MoreViews.storyboard in Resources */,
 				73771D7122FC2D240045CBA6 /* VisibleAccountsViewController.xib in Resources */,
 				73771D8522FC2D3F0045CBA6 /* Main.storyboard in Resources */,
@@ -696,7 +688,6 @@
 				E3A9C83F22C9276700FECEB0 /* Localizable.strings in Resources */,
 				73771D1022FACDFE0045CBA6 /* MoreViews.storyboard in Resources */,
 				E3A9C84022C927A000FECEB0 /* Assets.xcassets in Resources */,
-				73771D0522FAB9090045CBA6 /* TableViewCellMoveViews.xib in Resources */,
 				E3A9C83A22C907B400FECEB0 /* VisibleAccountsTableViewCell.xib in Resources */,
 				E3848C2A22C2C46100679DCA /* AllAccountsViewController.xib in Resources */,
 				E3A9C81C22C7E7BE00FECEB0 /* accounts.json in Resources */,
@@ -808,17 +799,17 @@
 				73771C7F22F96B770045CBA6 /* TodayViewController.swift in Sources */,
 				73771D0E22FAB9090045CBA6 /* MoveViewsWireframe.swift in Sources */,
 				73771D1A22FAE98B0045CBA6 /* MetalView.swift in Sources */,
-				7355C755231D5C5900E0CE08 /* Constants.swift in Sources */,
+				733F8AA6231E61500071A4C7 /* Constants.swift in Sources */,
 				73771CCF22F97F5B0045CBA6 /* VisibleAccountsWireframe.swift in Sources */,
 				73771CC922F97F5B0045CBA6 /* DataAccounts.swift in Sources */,
 				73771CD022F97F5B0045CBA6 /* VisibleAccountsInteractor.swift in Sources */,
 				73771D2022FAEE4B0045CBA6 /* Shaders.metal in Sources */,
 				73771CD722F97F5B0045CBA6 /* AllAccountsInteractor.swift in Sources */,
 				73771CDC22F97F5B0045CBA6 /* TabBarController.swift in Sources */,
+				733F8AAB231E74E00071A4C7 /* StringExtension.swift in Sources */,
 				73771CD122F97F5B0045CBA6 /* VisibleAccountsPresenter.swift in Sources */,
 				73771D0C22FAB9090045CBA6 /* MoveViewsViewController.swift in Sources */,
 				73771D0222FAB9090045CBA6 /* MoveViewsInteractor.swift in Sources */,
-				73771D0822FAB9090045CBA6 /* TableViewCellMoveViews.swift in Sources */,
 				73771CDD22F97F5B0045CBA6 /* TabBarInteractor.swift in Sources */,
 				73771CD422F97F5B0045CBA6 /* TableViewCellAllAccounts.swift in Sources */,
 				73771D1D22FAEA400045CBA6 /* Renderer.swift in Sources */,
@@ -846,9 +837,8 @@
 				73771D7B22FC2D370045CBA6 /* MoveViewsWireframe.swift in Sources */,
 				73771D6622FC2D040045CBA6 /* TodayViewController.swift in Sources */,
 				73771D6A22FC2D1C0045CBA6 /* DataProvider.swift in Sources */,
-				73771D7A22FC2D370045CBA6 /* TableViewCellMoveViews.swift in Sources */,
 				73771D6322FC2CE70045CBA6 /* TabBarInteractor.swift in Sources */,
-				7355C756231D5C5900E0CE08 /* Constants.swift in Sources */,
+				733F8AA8231E729C0071A4C7 /* Constants.swift in Sources */,
 				73771D6422FC2CE70045CBA6 /* TabBarPresenter.swift in Sources */,
 				73771D7222FC2D2A0045CBA6 /* TableViewCellAllAccounts.swift in Sources */,
 				73771D6D22FC2D240045CBA6 /* VisibleAccountsWireframe.swift in Sources */,
@@ -887,15 +877,15 @@
 			files = (
 				E3A9C82922C80AE900FECEB0 /* TableViewCellAllAccounts.swift in Sources */,
 				E3848C3022C2C4B200679DCA /* AllAccountsWireframe.swift in Sources */,
+				733F8AAA231E74E00071A4C7 /* StringExtension.swift in Sources */,
 				E3A9C82122C7F1B700FECEB0 /* DataAccounts.swift in Sources */,
 				E3A9C83E22C90C3E00FECEB0 /* DataProvider.swift in Sources */,
 				73771D0D22FAB9090045CBA6 /* MoveViewsWireframe.swift in Sources */,
-				7355C754231D5B7400E0CE08 /* Constants.swift in Sources */,
 				73771D0322FAB9090045CBA6 /* MoveViewsPresenter.swift in Sources */,
 				E3848C4422C2CA5400679DCA /* TabBarInteractor.swift in Sources */,
 				E3848C2922C2C46100679DCA /* AllAccountsViewController.swift in Sources */,
 				73771D1922FAE98B0045CBA6 /* MetalView.swift in Sources */,
-				73771D0722FAB9090045CBA6 /* TableViewCellMoveViews.swift in Sources */,
+				733F8AA4231E5E860071A4C7 /* Constants.swift in Sources */,
 				E3848C4222C2CA0B00679DCA /* TabBarController.swift in Sources */,
 				E3A9C82322C7F31F00FECEB0 /* Account.swift in Sources */,
 				73771D1C22FAEA400045CBA6 /* Renderer.swift in Sources */,

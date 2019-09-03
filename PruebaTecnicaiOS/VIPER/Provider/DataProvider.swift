@@ -27,7 +27,7 @@ class DataProvider: DataProviderProtocol {
                 if jsonData.returnCode == "OK"{
                     success(jsonData)
                 } else {
-                    print(NSLocalizedString("unexpected_error", comment: "unexpected_error"))
+                    print("unexpected_error".localize)
                 }
 
             } catch {

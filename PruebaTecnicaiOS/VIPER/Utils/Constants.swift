@@ -2,15 +2,14 @@
 //  Constants.swift
 //  PruebaTecnicaiOS
 //
-//  Created by Gonzalo Vizeu on 02/09/2019.
+//  Created by Gonzalo Vizeu on 03/09/2019.
 //
 
 import Foundation
+import UIKit
 
-struct CellId {
-    static let visibleAccountsTableViewCell = "VisibleAccountsTableViewCell"
-}
+public enum ViewCells: String {
+    case visibleAccountsTableViewCell = "VisibleAccountsTableViewCell"
+    case tableViewCellAllAccounts = "TableViewCellAllAccounts"
 
-enum MyEnum: String {
-    case unaVista
 }

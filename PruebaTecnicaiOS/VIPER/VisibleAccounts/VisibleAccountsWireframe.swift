@@ -13,7 +13,7 @@ protocol VisibleAccountsWireframeProtocol: class {
 }
 class VisibleAccountsWireframe: TabBarViewProtocol, VisibleAccountsWireframeProtocol {
     var tabIcon: UIImage = UIImage(named: "Module2Image")!
-    var tabTitle: String = NSLocalizedString("visible_accounts", comment: "visible_accounts")
+    var tabTitle: String = "visible_accounts".localize
 
     func configuredViewController() -> UIViewController {
         let presenter: VisibleAccountsPresenterProtocol & VisibleAccountsInteractorOutputProtocol = VisibleAccountsPresenter()
